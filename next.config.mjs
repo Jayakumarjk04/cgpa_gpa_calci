@@ -1,19 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  trailingSlash: true,
-  distDir: 'out',
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  basePath: '/cgpa_gpa_calci',
+  assetPrefix: '/cgpa_gpa_calci',
   images: {
-    unoptimized: true
+    unoptimized: true,
   },
-  assetPrefix: '',
-  basePath: '',
-}
+};
 
-export default nextConfig
+export default nextConfig;
